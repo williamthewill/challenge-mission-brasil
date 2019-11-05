@@ -1,0 +1,56 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"diagnostics": false,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"noErrorTruncation": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": false,
+		"outDir": "./dist/",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es6",
+		"lib": [
+			"dom",
+			"esnext"
+		],
+		"paths": {
+			"#config": [
+				"src/setup/config"
+			],
+			"#setup/*": [
+				"src/setup/*"
+			],
+			"#utils/*": [
+				"src/utils/*"
+			],
+			"#utils": [
+				"src/utils/index"
+			],
+			"#routes/*": [
+				"src/routes/*"
+			],
+			"#handlers": [
+				"src/handlers/index"
+			],
+			"#handlers/*": [
+				"src/handlers/*"
+			],
+			"#src/*": [
+				"src/*"
+			],
+			"*": [
+				"node_modules/*",
+				"src/_vendor/*"
+			]
+		}
+	},
+	"include": [
+		"src/**/*",
+		"tests/**/*"
+	]
+}

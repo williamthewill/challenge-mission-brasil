@@ -1,0 +1,57 @@
+{
+  "name": "challenge-mission-brasil",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "ava",
+    "compile": "tsc"
+  },
+  "requireRewrite": {
+    "map": [
+      [
+        "#config",
+        "dist/src/setup/config"
+      ],
+      [
+        "#utils",
+        "dist/src/utils"
+      ],
+      [
+        "#setup",
+        "dist/src/setup"
+      ],
+      [
+        "#handlers",
+        "dist/src/handlers"
+      ],
+      [
+        "#schemas",
+        "dist/src/schemas"
+      ]
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.10",
+    "eslint": "^5.16.0",
+    "source-map-support": "^0.5.9",
+    "typescript": "^3.4.0",
+    "yarn": "^1.19.1"
+  },
+  "dependencies": {
+    "@types/archiver": "^3.0.0",
+    "archiver": "^3.1.1",
+    "ava": "^2.4.0",
+    "dotenv-safe": "^8.1.0",
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "io-ts": "^1.4.2",
+    "require-rewrite": "^1.0.2"
+  }
+}
